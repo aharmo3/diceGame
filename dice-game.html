@@ -1,0 +1,30 @@
+<html> 
+<head>
+<title>Craps game</title>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style type="text/css">
+.die{
+	background: url(images/die-face.png) no-repeat;	
+	width:104px;
+	height:104px;
+	display:inline-block;
+	margin:10px;
+
+}
+</style>
+</head>
+
+<body>
+<div class="die" id="dieLeft"></div>
+<div class="die" id="dieRight"></div>
+<br/> 
+<button  id="throwDice">Throw dice </button>
+<form name="f" id="f">
+Stage: <input id="stage" name="stage" value="First Throw"/>
+Point: <input id="pv" name="pv" value="   "/>
+Outcome: <input id="outcome" name="outcome" value="     "/>
+</form>
+<script src="scripts/dice.js"></script>
+
+</body>
+</html>
