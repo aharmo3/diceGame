@@ -11,12 +11,45 @@
 	margin:10px;
 
 }
+#dieContainer{
+    height: 104px;
+}
+#goal{
+    display: inline-block;
+    vertical-align: top;
+}
+#goal p{
+    height: 52px;
+    margin: 10px 0 0 0;
+    vertical-align: middle;
+}
+#firstRoll{
+    font-size: 34px;
+}
+#result{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 36px;
+    font-weight: bold;
+}
+.winner{
+    color: green;
+}
+.loser{
+    color: red;
+}
 </style>
 </head>
 
 <body>
-<div class="die" id="dieLeft"></div>
-<div class="die" id="dieRight"></div>
+<div id="dieContainer">
+    <div class="die" id="dieLeft"></div>
+    <div class="die" id="dieRight"></div>
+    <div id='goal'>
+        <p>Goal:&nbsp;<span id='firstRoll'></span></p>
+        <p id="result"></p>
+    </div>
+</div>
 <br/> 
 <button  id="throwDice">Throw dice </button>
 <form name="f" id="f">
